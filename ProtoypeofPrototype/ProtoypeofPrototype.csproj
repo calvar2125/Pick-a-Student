@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="absentAnswer.png" />
+    <None Remove="absentAnswerSelected.png" />
+    <None Remove="addStudentLogo.png" />
+    <None Remove="deleteStudentLogo.png" />
+    <None Remove="editStudentLogo.png" />
+    <None Remove="exitLogo.png" />
+    <None Remove="goodAnswer.png" />
+    <None Remove="goodAnswerSelected.png" />
+    <None Remove="notQuiteAnswer.png" />
+    <None Remove="notQuiteAnswerSelected.png" />
+    <None Remove="saveLogo.png" />
+    <None Remove="thinkAnswer.png" />
+    <None Remove="thinkAnswerSelected.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="absentAnswer.png" />
+    <Resource Include="absentAnswerSelected.png" />
+    <Resource Include="addStudentLogo.png" />
+    <Resource Include="deleteStudentLogo.png" />
+    <Resource Include="editStudentLogo.png" />
+    <Resource Include="exitLogo.png" />
+    <Resource Include="goodAnswer.png" />
+    <Resource Include="goodAnswerSelected.png" />
+    <Resource Include="notQuiteAnswer.png" />
+    <Resource Include="notQuiteAnswerSelected.png" />
+    <Resource Include="saveLogo.png" />
+    <Resource Include="thinkAnswer.png" />
+    <Resource Include="thinkAnswerSelected.png" />
+  </ItemGroup>
+
+</Project>

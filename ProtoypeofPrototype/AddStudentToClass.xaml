@@ -1,0 +1,35 @@
+﻿<Window x:Class="ProtoypeofPrototype.AddStudentToClass"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProtoypeofPrototype"
+        mc:Ignorable="d"
+        Title="COSC 9001"  Height="500" Width="400">
+    <Grid>
+        <Grid Margin="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="235*"/>
+                <RowDefinition Height="229*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="*"/>
+
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Row="1" Grid.Column="2" Margin="5,235,0,0" Grid.RowSpan="2"/>
+            <ListBox Grid.Row="1" x:Name = "lstNames" Grid.RowSpan="2" />
+            <ListBox Grid.Row="1" Grid.Column="1" x:Name="stuID" Grid.RowSpan="2"/>
+            <TextBox x:Name="stuNameBox" Grid.Column="2" HorizontalAlignment="Left" Height="21" Margin="0,25,0,0" Grid.RowSpan="2" Text=" " TextWrapping="Wrap" VerticalAlignment="Top" Width="140"/>
+            <TextBox x:Name="stuIDBox" Grid.Column="2" HorizontalAlignment="Left" Height="22" Margin="0,78,0,0" Grid.RowSpan="2" Text=" " TextWrapping="Wrap" VerticalAlignment="Top" Width="140"/>
+            <Label Content="Student Name" Grid.Column="2" HorizontalAlignment="Left" Height="25" Grid.RowSpan="2" VerticalAlignment="Top" Width="140"/>
+            <Label Content="Student ID" Grid.Column="2" HorizontalAlignment="Left" Height="32" Margin="0,46,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="140"/>
+            <StackPanel Grid.Column="2" HorizontalAlignment="Left" Height="77" Margin="5,118,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="136">
+                <Button x:Name="ButtonAddName_Click" Content="Add Student" Height="27" Width="136" Click="ButtonNameAdd_Click"/>
+            </StackPanel>
+
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,30 @@
+﻿<Window x:Class="ProtoypeofPrototype.PICK_A_STUDENT"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProtoypeofPrototype"
+        mc:Ignorable="d"
+        Title="PICK_A_STUDENT" Height="600" Width="800" WindowStyle="SingleBorderWindow">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="173*"/>
+            <RowDefinition Height="411*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="begin" Content="Begin" HorizontalAlignment="Left" Height="56" Margin="300,119,0,0" VerticalAlignment="Top" Width="213" FontSize="24" FontWeight="Bold" FontFamily="Consolas" Click="beginRandom" Grid.Row="1"/>
+        <Button x:Name="nextStu" Content="Next" HorizontalAlignment="Left" Height="59" Margin="300,116,0,0" VerticalAlignment="Top" Width="213" FontSize="24" FontFamily="Consolas" FontWeight="Bold" Visibility="Hidden" Click="nextStudent" Grid.Row="1"/>
+        <Label x:Name="stuName" Content="" HorizontalAlignment="Center" Height="87" Margin="0,155,0,0" VerticalAlignment="Top" Width="677" FontFamily="Consolas" FontSize="48" HorizontalContentAlignment="Center" Grid.RowSpan="2"/>
+        <Image x:Name="smile1" HorizontalAlignment="Left" Height="180" Margin="46,190,0,0" VerticalAlignment="Top" Width="180" Source="goodAnswer.png" Visibility="Hidden" MouseDown="smile1Click" Grid.Row="1"/>
+        <Image x:Name="smile2" HorizontalAlignment="Left" Height="180" Margin="226,190,0,0" VerticalAlignment="Top" Width="180" Source="thinkAnswer.png" Visibility="Hidden" MouseDown="smile2Click" Grid.Row="1"/>
+        <Image x:Name="smile3" HorizontalAlignment="Left" Height="180" Margin="400,190,0,0" VerticalAlignment="Top" Width="180" Source="notQuiteAnswer.png" Visibility="Hidden" MouseDown="smile3Click" Grid.Row="1"/>
+        <Image x:Name="smile4" HorizontalAlignment="Left" Height="180" Margin="576,190,0,0" VerticalAlignment="Top" Width="180" Source="absentAnswer.png" Visibility="Hidden" MouseDown="smile4Click" Grid.Row="1"/>
+        <Border BorderThickness="1" BorderBrush="Black" Width="800" Grid.RowSpan="2">
+            <Border BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Center" Height="87" Margin="0,156,0,0" VerticalAlignment="Top" Width="677">
+                <Button x:Name="Reset_Button" Content="Reset" Margin="567,-120,-4,172" Click="Reset_Button_Click" Height="33" Width="112"/>
+            </Border>
+        </Border>
+        <Image HorizontalAlignment="Left" Height="80" Margin="36,12,0,0" VerticalAlignment="Top" Width="80" Source="exitLogo.png" MouseDown="exitMenu"/>
+        <Button x:Name="Save" Content="Save" Margin="490,38,198,0" Width="112" Click="Save_Click" Height="33" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
